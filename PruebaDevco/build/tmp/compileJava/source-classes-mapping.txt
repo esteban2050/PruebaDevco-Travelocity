@@ -1,0 +1,6 @@
+com/travelocity/userinterfaces/HomePage.java
+ com.travelocity.userinterfaces.HomePage
+com/travelocity/userinterfaces/LoginPage.java
+ com.travelocity.userinterfaces.LoginPage
+com/travelocity/userinterfaces/TravelocityPage.java
+ com.travelocity.userinterfaces.TravelocityPage
