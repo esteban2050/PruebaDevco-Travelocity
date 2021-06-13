@@ -1,6 +1,27 @@
+com/travelocity/questions/TheLanguage.java
+ com.travelocity.questions.TheLanguage
+com/travelocity/models/TravelTypes.java
+ com.travelocity.models.TravelTypes
+com/travelocity/tasks/LogOut.java
+ com.travelocity.tasks.LogOut
+com/travelocity/questions/TheSearchTitle.java
+ com.travelocity.questions.TheSearchTitle
+ com.travelocity.questions.TheSearchTitle$1
 com/travelocity/userinterfaces/HomePage.java
  com.travelocity.userinterfaces.HomePage
 com/travelocity/userinterfaces/LoginPage.java
  com.travelocity.userinterfaces.LoginPage
-com/travelocity/userinterfaces/TravelocityPage.java
- com.travelocity.userinterfaces.TravelocityPage
+com/travelocity/tasks/LogIn.java
+ com.travelocity.tasks.LogIn
+com/travelocity/tasks/FillTheInformation.java
+ com.travelocity.tasks.FillTheInformation
+com/travelocity/interactions/OpenBrowser.java
+ com.travelocity.interactions.OpenBrowser
+com/travelocity/questions/TheTitle.java
+ com.travelocity.questions.TheTitle
+com/travelocity/exceptions/ElementDoesNotExistException.java
+ com.travelocity.exceptions.ElementDoesNotExistException
+com/travelocity/interactions/Click.java
+ com.travelocity.interactions.Click
+com/travelocity/exceptions/ResultException.java
+ com.travelocity.exceptions.ResultException

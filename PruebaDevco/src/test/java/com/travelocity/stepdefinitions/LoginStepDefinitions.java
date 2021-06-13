@@ -31,7 +31,6 @@ public class LoginStepDefinitions {
     public void thatAUserHasAccessToTheTravelocityPage() {
         theActorCalled("Esteban");
         theActorInTheSpotlight().wasAbleTo(OpenBrowser.on(travelocityPage));
-
     }
 
     @When("^the user try to logg-in on the page$")

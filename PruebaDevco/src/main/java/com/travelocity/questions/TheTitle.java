@@ -1,5 +1,6 @@
 package com.travelocity.questions;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 

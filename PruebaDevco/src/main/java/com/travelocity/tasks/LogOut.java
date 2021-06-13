@@ -14,7 +14,6 @@ public class LogOut implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(BTN_SIGIN),
                 Click.on(BTN_SIGN_OFF));
-
     }
 
     public static LogOut thePage() {
