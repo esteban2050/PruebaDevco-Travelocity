@@ -11,7 +11,7 @@ Feature: functionalities from the home page
   @test
   Scenario: The user change the language
     When the user change the language on the page
-    Then sees that the language change to english
+    Then sees that the language change to spanish
 
   Scenario Outline: The user sees the different travels
     When the user see the <travel> type

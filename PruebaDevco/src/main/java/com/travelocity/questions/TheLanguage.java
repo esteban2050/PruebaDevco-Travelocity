@@ -16,7 +16,7 @@ public class TheLanguage implements Question<Boolean> {
         moreTravel = BTN_MORE_TRAVEL.resolveFor(actor).getText();
         support = BTN_SUPPORT.resolveFor(actor).getText();
         trips = BTN_TRIPS.resolveFor(actor).getText();
-        return moreTravel.equals("More travel") && support.equals("Support") && trips.equals("Trips");
+        return !(moreTravel.equals("More travel") && support.equals("Support") && trips.equals("Trips"));
     }
 
     public static TheLanguage change(){

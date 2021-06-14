@@ -1,18 +1,17 @@
 package com.travelocity.stepdefinitions;
 
 import com.travelocity.exceptions.ResultException;
-import com.travelocity.interactions.Click;
 import com.travelocity.models.TravelTypes;
 import com.travelocity.questions.Result;
 import com.travelocity.questions.TheLanguage;
 import com.travelocity.questions.TheSearchTitle;
+import com.travelocity.tasks.ChangeLanguage;
 import com.travelocity.tasks.FillTheInformation;
 import com.travelocity.tasks.Select;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import static com.travelocity.exceptions.ResultException.*;
-import static com.travelocity.userinterfaces.HomePage.BTN_LANGUAGE;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
@@ -20,11 +19,11 @@ public class HomeStepDefinitions {
 
     @When("^the user change the language on the page$")
     public void theUserChangeTheLanguageOnThePage() {
-        theActorInTheSpotlight().attemptsTo(Click.on(BTN_LANGUAGE));
+        theActorInTheSpotlight().attemptsTo(ChangeLanguage.ofThePage());
     }
 
-    @Then("^sees that the language change to english$")
-    public void seesThatTheLanguageChangeToEnglish() {
+    @Then("^sees that the language change to spanish$")
+    public void seesThatTheLanguageChangeToSpanish() {
         theActorInTheSpotlight().should(seeThat(TheLanguage.change())
                 .orComplainWith(ResultException.class, LANGUAGE_IS_SAME)
         );

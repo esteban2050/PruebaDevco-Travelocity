@@ -1,12 +1,11 @@
 package com.travelocity.tasks;
 
-import com.travelocity.exceptions.ElementDoesNotExistException;
-import com.travelocity.interactions.Click;
 import com.travelocity.models.TravelTypes;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.targets.Target;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 

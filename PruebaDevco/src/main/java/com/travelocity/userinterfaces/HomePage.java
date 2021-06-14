@@ -13,7 +13,7 @@ public class HomePage {
     public static final Target BTN_TRIPS = Target.the("button of the trips").located(By.id("itinerary"));
     public static final Target BTN_TRAVEL = Target.the("item of the travels").locatedBy("//div[@class='uitk-text uitk-type-300' and contains(text(),'{0}')]");
     public static final Target BTN_SIGN_OFF = Target.the("button to close the session").locatedBy("//div[@class='uitk-text uitk-type-300' and contains(text(), 'Sign out')]");
-    public static final Target BTN_LANGUAGE = Target.the("button to change the language of the page").locatedBy("//button[@class='uitk-button uitk-button-medium uitk-button-has-text']");
+    public static final Target BTN_LANGUAGE = Target.the("button to change the language of the page").locatedBy("//*[@id=\"secondaryNav\"]/div[1]/button");
     public static final Target BTN_LOCATION = Target.the("button to search the location").locatedBy("//button[@class='uitk-faux-input']");
     public static final Target BTN_SELECT_LOCATION = Target.the("button to select the location").locatedBy("//*[@id=\"location-field-destination-menu\"]/div[2]/ul/li[1]/button");
     public static final Target BTN_TRAVELERS = Target.the("button to select the travelers").locatedBy("//button[@class='uitk-fake-input uitk-form-field-trigger']");

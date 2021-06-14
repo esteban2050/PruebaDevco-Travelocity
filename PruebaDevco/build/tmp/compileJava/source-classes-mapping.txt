@@ -7,6 +7,8 @@ com/travelocity/tasks/LogOut.java
 com/travelocity/questions/TheSearchTitle.java
  com.travelocity.questions.TheSearchTitle
  com.travelocity.questions.TheSearchTitle$1
+com/travelocity/tasks/ChangeLanguage.java
+ com.travelocity.tasks.ChangeLanguage
 com/travelocity/userinterfaces/HomePage.java
  com.travelocity.userinterfaces.HomePage
 com/travelocity/userinterfaces/LoginPage.java
@@ -23,8 +25,6 @@ com/travelocity/questions/TheTitle.java
  com.travelocity.questions.TheTitle
 com/travelocity/exceptions/ElementDoesNotExistException.java
  com.travelocity.exceptions.ElementDoesNotExistException
-com/travelocity/interactions/Click.java
- com.travelocity.interactions.Click
 com/travelocity/questions/Result.java
  com.travelocity.questions.Result
 com/travelocity/tasks/Select.java
