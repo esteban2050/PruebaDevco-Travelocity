@@ -38,7 +38,8 @@ public class TheSearchTitle implements Question<Boolean> {
             case THINGSTODO:
                 return "things to do";
             default:
-                throw  new ElementDoesNotExistException("the element is does not exist");
+                //throw  new ElementDoesNotExistException("the element is does not exist" + travelTypes);
+                return null;
         }
     }
 

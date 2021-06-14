@@ -44,7 +44,8 @@ public class Select implements Task {
             case THINGSTODO:
                 return BTN_TRAVEL.of("Things to do");
             default:
-                throw new ElementDoesNotExistException("Element does not exists: " + travelTypes);
+                //throw new ElementDoesNotExistException("Element does not exists: " + travelTypes);
+                return null;
         }
     }
 

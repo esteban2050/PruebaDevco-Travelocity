@@ -1,6 +1,6 @@
 #Author: ju.eslogi@hotmail.com
 
-Feature:
+Feature: functionalities from the home page
   As a common user
   I want to interact with the different
   functions on the page
@@ -8,6 +8,7 @@ Feature:
   Background:
     Given that a user has access to the travelocity page
 
+  @test
   Scenario: The user change the language
     When the user change the language on the page
     Then sees that the language change to english
@@ -21,7 +22,7 @@ Feature:
       | STAYS    |
 
   Scenario Outline: The user search a stay
-    When the user fills the information with <destination>, <fchInicio>, <fchFin>, <children> and <adults>
+    When the user fills the information with <destination>, <fchInicio>, <fchFin>, <adults> and <children>
     Then saw that the search was successful
 
     Examples:

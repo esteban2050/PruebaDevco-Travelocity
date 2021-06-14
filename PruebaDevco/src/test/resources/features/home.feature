@@ -1,6 +1,6 @@
 #Author: ju.eslogi@hotmail.com
 
-Feature:
+Feature: functionalities from the home page
   As a common user
   I want to interact with the different
   functions on the page
@@ -8,6 +8,7 @@ Feature:
   Background:
     Given that a user has access to the travelocity page
 
+  @test
   Scenario: The user change the language
     When the user change the language on the page
     Then sees that the language change to english

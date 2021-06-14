@@ -42,8 +42,8 @@ dependencies {
 }
 
 test {
-    systemProperty 'oracleDB.user', System.getProperty('user')
-    systemProperty 'oracleDB.password', System.getProperty('password')
+    systemProperty 'user', System.getProperty('user')
+    systemProperty 'password', System.getProperty('password')
 }
 
 gradle.startParameter.continueOnFailure = true

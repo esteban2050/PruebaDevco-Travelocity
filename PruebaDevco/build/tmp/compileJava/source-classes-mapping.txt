@@ -13,6 +13,8 @@ com/travelocity/userinterfaces/LoginPage.java
  com.travelocity.userinterfaces.LoginPage
 com/travelocity/tasks/LogIn.java
  com.travelocity.tasks.LogIn
+com/travelocity/userinterfaces/TravelocityPage.java
+ com.travelocity.userinterfaces.TravelocityPage
 com/travelocity/tasks/FillTheInformation.java
  com.travelocity.tasks.FillTheInformation
 com/travelocity/interactions/OpenBrowser.java
@@ -23,5 +25,10 @@ com/travelocity/exceptions/ElementDoesNotExistException.java
  com.travelocity.exceptions.ElementDoesNotExistException
 com/travelocity/interactions/Click.java
  com.travelocity.interactions.Click
+com/travelocity/questions/Result.java
+ com.travelocity.questions.Result
+com/travelocity/tasks/Select.java
+ com.travelocity.tasks.Select
+ com.travelocity.tasks.Select$1
 com/travelocity/exceptions/ResultException.java
  com.travelocity.exceptions.ResultException

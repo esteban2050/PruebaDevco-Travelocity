@@ -9,6 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/onthepage.feature",
         glue = "com.travelocity.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE
+        //,tags = "@test"
 )
-public class Login {
+public class OnThePage {
 }

@@ -12,12 +12,13 @@ Feature: Login and logout
   Scenario Outline: The user logg-in to the travelocity page
     Then the user see the <title> in the toolbar
     Examples:
-      | title |
+      | title     |
       | different |
 
+  @test
   Scenario Outline: The user logs out safely
     And the user try to logs out
     Then the user see the <title> in the toolbar
     Examples:
-      | title          |
-      | Iniciar sesión |
+      | title   |
+      | Sign in |
