@@ -12,7 +12,6 @@ Feature: functionalities from the home page
     When the user change the language on the page
     Then sees that the language change to spanish
 
-  @test
   Scenario Outline: The user sees the different travels
     When the user see the <travel> type
     Then sees the title of the search is the correct with <travel>
@@ -21,6 +20,7 @@ Feature: functionalities from the home page
       | PACKAGES |
       | STAYS    |
 
+  @test
   Scenario Outline: The user search a stay
     When the user fills the information with <destination>, <fchInicio>, <fchFin>, <adults> and <children>
     Then saw that the search was successful

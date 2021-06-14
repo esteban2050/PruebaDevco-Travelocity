@@ -11,7 +11,6 @@ import static com.travelocity.userinterfaces.HomePage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
-@AllArgsConstructor
 public class FillTheInformation implements Task {
 
     private String destination;
@@ -20,6 +19,13 @@ public class FillTheInformation implements Task {
     private int adults;
     private int children;
 
+    public FillTheInformation(String destination, String fchIni, String fhcFin, int adults, int children){
+        this.destination =destination;
+        this.fchIni = fchIni;
+        this.fhcFin = fhcFin;
+        this.adults = adults;
+        this.children = children;
+    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
@@ -49,6 +55,7 @@ public class FillTheInformation implements Task {
             }
         }
         actor.attemptsTo(Click.on(BTN_CONFIRM_TRAVELERS),
+                WaitUntil.the(BTN_SEARCH, isVisible()).forNoMoreThan(3).seconds(),
                 Click.on(BTN_SEARCH));
     }
 
