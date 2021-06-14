@@ -8,11 +8,11 @@ Feature: functionalities from the home page
   Background:
     Given that a user has access to the travelocity page
 
-  @test
   Scenario: The user change the language
     When the user change the language on the page
-    Then sees that the language change to english
+    Then sees that the language change to spanish
 
+  @test
   Scenario Outline: The user sees the different travels
     When the user see the <travel> type
     Then sees the title of the search is the correct with <travel>

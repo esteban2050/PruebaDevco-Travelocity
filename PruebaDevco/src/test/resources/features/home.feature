@@ -8,7 +8,6 @@ Feature: functionalities from the home page
   Background:
     Given that a user has access to the travelocity page
 
-  @test
   Scenario: The user change the language
     When the user change the language on the page
     Then sees that the language change to spanish
@@ -21,6 +20,7 @@ Feature: functionalities from the home page
       | PACKAGES |
       | STAYS    |
 
+  @test
   Scenario Outline: The user search a stay
     When the user fills the information with <destination>, <fchInicio>, <fchFin>, <adults> and <children>
     Then saw that the search was successful

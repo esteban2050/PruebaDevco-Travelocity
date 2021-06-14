@@ -18,8 +18,11 @@ public class TheSearchTitle implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        return TITLE_TRAVELS1.resolveFor(actor).containsText(word())
-                || TITLE_TRAVELS2.resolveFor(actor).containsText(word());
+        if (TITLE_TRAVELS1.resolveFor(actor).isVisible()){
+            return TITLE_TRAVELS1.resolveFor(actor).containsText(word());
+        }else{
+            return TITLE_TRAVELS2.resolveFor(actor).containsText(word());
+        }
     }
 
     @SneakyThrows

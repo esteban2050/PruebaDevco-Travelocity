@@ -14,15 +14,18 @@ import static com.travelocity.userinterfaces.HomePage.BTN_TRAVEL;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
-@AllArgsConstructor
 public class Select implements Task {
 
     private TravelTypes travelTypes;
 
+    public Select(TravelTypes travelTypes){
+        this.travelTypes = travelTypes;
+    }
+
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(WaitUntil.the(BTN_MORE_TRAVEL, isVisible()).forNoMoreThan(3).seconds(),
-                Click.on(BTN_MORE_TRAVEL),
+       actor.attemptsTo(Click.on(BTN_MORE_TRAVEL),
+                WaitUntil.the(travelType(), isVisible()).forNoMoreThan(3).seconds(),
                 Click.on(travelType())
                 );
     }
