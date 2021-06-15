@@ -13,6 +13,8 @@ clean test --tests com.travelocity.runners.OnThePage aggregate
  -Duser=ju.eslogi123@hotmail.com
  -Dpassword=Juan5075551
 
+Se debe tener en cuenta que adicional a ello, debido a la validacion de los captcha, se adiciono unas esperas implicitas desde el archivo serenity.properties con el objetivo de que el codigo espere un tiempod determinado y no estalle la ejecucion, dando asi el tiempo suficiente para validar el captcha manual para dos escenarios en los cuales fue necesario loggearse para ello.
+
 #Descarga del proyecto---------------------------
 
 Para la descarga del repositorio se debe de seguir los siguientes pasos: 
